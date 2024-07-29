@@ -26,10 +26,10 @@ if __name__ == "__main__":
 #ID_PASS:
         time.sleep(1)
         css_id = driver.find_element(By.CSS_SELECTOR, 'input[name="email"]')
-        css_id.send_keys('0876756956')
+        css_id.send_keys('Your number')
         time.sleep(0.5)
         css_pass = driver.find_element(By.CSS_SELECTOR, 'input[name="pass"]')
-        css_pass.send_keys('Vuhoc..2005')
+        css_pass.send_keys('Your password')
         css_button_login = driver.find_element(By.CSS_SELECTOR, 'button[name="login"]')
         css_button_login.click()
         WebDriverWait(driver, 10).until(ec.presence_of_element_located((By.CSS_SELECTOR, '[aria-label="Messenger"]')))
